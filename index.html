@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jeremy Carl Layaoen Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .hover-scale:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+    section {
+      scroll-margin-top: 100px;
+    }
+    #loading-screen {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: #2c3e50;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 100;
+    }
+    #loading-screen span {
+      color: #ecf0f1;
+      font-size: 2rem;
+      animation: pulse 1s infinite;
+    }
+    @keyframes pulse {
+      0% { opacity: 0.4; }
+      50% { opacity: 1; }
+      100% { opacity: 0.4; }
+    }
+  </style>
+</head>
+<body class="bg-[#e2f5f8] text-[#5f6368] font-sans">
+
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <span>Loading Portfolio...</span>
+  </div>
+
+ <!-- Headbar / Navbar -->
+<header class="w-full flex justify-between items-center px-8 py-4 bg-[#f0f9fa] shadow-md">
+  <div class="flex items-center space-x-6 flex-wrap">
+    <img src="logo.ico" alt="Logo" class="w-12 h-12">
+    <h1 class="text-2xl font-bold text-[#5f6368] whitespace-nowrap">My Portfolio</h1>
+    <nav class="flex flex-wrap gap-2">
+      <a href="#about" class="bg-[#ffe5b4] text-[#5f6368] px-4 py-2 rounded hover:bg-[#f0c2a0] text-sm">About Me</a>
+      <a href="#skills" class="bg-[#ffe5b4] text-[#5f6368] px-4 py-2 rounded hover:bg-[#f0c2a0] text-sm">Skills</a>
+      <a href="#tools" class="bg-[#ffe5b4] text-[#5f6368] px-4 py-2 rounded hover:bg-[#f0c2a0] text-sm">Tools</a>
+      <a href="#services offered" class="bg-[#ffe5b4] text-[#5f6368] px-4 py-2 rounded hover:bg-[#f0c2a0] text-sm">Services offered</a>
+      <a href="#experience" class="bg-[#ffe5b4] text-[#5f6368] px-4 py-2 rounded hover:bg-[#f0c2a0] text-sm">Experience</a>
+      <a href="#achievements" class="bg-[#ffe5b4] text-[#5f6368] px-4 py-2 rounded hover:bg-[#f0c2a0] text-sm">Achievements</a>
+      <a href="#education" class="bg-[#ffe5b4] text-[#5f6368] px-4 py-2 rounded hover:bg-[#f0c2a0] text-sm">Education</a>
+      <a href="#contact" class="bg-[#ffe5b4] text-[#5f6368] px-4 py-2 rounded hover:bg-[#f0c2a0] text-sm">Contact</a>
+      <a href="#freelance" class="bg-[#ffe5b4] text-[#5f6368] px-4 py-2 rounded hover:bg-[#f0c2a0] text-sm">Freelance Opportunity</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Welcome / Introduction Section -->
+<section class="min-h-[70vh] flex flex-col justify-center items-center text-center bg-[#D1F2EB] px-8 py-20">
+  <h2 class="text-5xl font-bold mb-4 text-[#5f6368]">Let’s Create Success Together!</h2>
+  <p class="text-xl text-[#7a7a7a] max-w-3xl mb-6">
+    Welcome to my personal portfolio, where I showcase my journey of growth, learning, and dedication. From mastering essential skills to applying them in real-world scenarios, this site reflects my commitment to continuous improvement and excellence. Dive in to explore my experiences, achievements, and the tools that help me bring ideas to life.
+  </p>
+  <blockquote class="italic text-[#a67c52] text-lg max-w-2xl mb-6">
+    “Your next great team member is someone who combines skill with heart—ready to contribute, learn, and grow.”
+  </blockquote>
+  <a href="#about" class="bg-[#ffe5b4] text-[#5f6368] px-6 py-3 rounded hover:bg-[#f0c2a0] text-lg font-semibold transition duration-300">
+    Explore the Road I’ve Traveled
+  </a>
+  <a href="resume.docx" target="_blank" class="bg-[#d1a17e] text-white px-6 py-3 rounded hover:bg-[#b88a6c] text-lg font-semibold transition duration-300">
+    Download My Résumé
+  </a>
+</section>
+
+
+  <main class="space-y-24">
+
+    <!-- About Section -->
+
+    <section id="about" class="min-h-[200px] max-w-4xl mx-auto px-8 py-20 bg-[#f9f7f3] rounded-xl shadow-md">
+      <h2 class="text-4xl font-bold mb-6">About Me</h2>
+      <div class="flex gap-6 items-center mb-12">
+        <!-- Increased Picture Size -->
+        <img src="jeremy.jfif" class="w-64 h-64 object-cover rounded-full shadow-lg" alt="Jeremy's Formal Picture">
+        <div>
+          <p class="text-xl leading-relaxed">
+            I bring years of experience in customer service with a strong focus on hospitality, upselling, and client satisfaction. I specialize in handling guest concerns, improving booking processes, and ensuring seamless support delivery. Passionate about creating meaningful customer experiences and exceeding expectations.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="min-h-[200px] max-w-4xl mx-auto px-8 py-20 bg-[#f9f7f3] rounded-xl shadow-md">
+      <h2 class="text-4xl font-bold mb-12">Skills</h2>
+      <div class="flex flex-wrap gap-4">
+        <span class="px-6 py-3 border border-[#f0c2a0] rounded-full text-xl">Customer Service</span>
+        <span class="px-6 py-3 border border-[#f0c2a0] rounded-full text-xl">Hotel Booking Systems</span>
+        <span class="px-6 py-3 border border-[#f0c2a0] rounded-full text-xl">Upselling Techniques</span>
+        <span class="px-6 py-3 border border-[#f0c2a0] rounded-full text-xl">Problem Solving</span>
+        <span class="px-6 py-3 border border-[#f0c2a0] rounded-full text-xl">CRM Tools</span>
+        <span class="px-6 py-3 border border-[#f0c2a0] rounded-full text-xl">Clear Communication</span>
+      </div>
+    </section>
+<!-- Tools I Use Section -->
+<section id="tools" class="min-h-[200px] max-w-4xl mx-auto px-8 py-20 bg-[#f9f7f3] rounded-xl shadow-md">
+    <h2 class="text-4xl font-bold mb-12">Tools I Use</h2>
+    <div class="flex flex-wrap gap-4">
+      <div class="hover-scale">
+          <img src="msword.png" alt="MS Word" class="mx-auto w-16 h-16">
+          <p class="mt-4 text-lg">MS Word</p>
+        </div>
+        <div class="hover-scale">
+          <img src="msexcel.png" alt="MS Excel" class="mx-auto w-16 h-16">
+          <p class="mt-4 text-lg">MS Excel</p>
+        </div>
+        <div class="hover-scale">
+          <img src="outlook.png" alt="Outlook" class="mx-auto w-16 h-16">
+          <p class="mt-4 text-lg">Outlook</p>
+        </div>
+        <div class="hover-scale">
+          <img src="ppt.png" alt="Powerpoint" class="mx-auto w-16 h-16">
+          <p class="mt-4 text-lg">Powerpoint</p>
+        </div>
+        <div class="hover-scale">
+          <img src="canva.png" alt="Canva" class="mx-auto w-16 h-16">
+          <p class="mt-4 text-lg">Canva</p>
+        </div>
+        <div class="hover-scale">
+          <img src="gmeet.png" alt="Google meet" class="mx-auto w-16 h-16">
+          <p class="mt-4 text-lg">Google Meet</p>
+        </div>
+        <div class="hover-scale">
+          <img src="msteams.png" alt="Microsoft Teams" class="mx-auto w-16 h-16">
+          <p class="mt-4 text-lg">Microsoft Teams</p>
+        </div>
+        <div class="hover-scale">
+          <img src="zoom.png" alt="Zoom" class="mx-auto w-16 h-16">
+          <p class="mt-4 text-lg">Zoom</p>
+        </div>
+        <div class="hover-scale">
+          <img src="chatgpt.png" alt="ChatGPT" class="mx-auto w-16 h-16">
+          <p class="mt-4 text-lg">ChatGPT</p>
+        </div>
+        <div class="hover-scale">
+          <img src="gdrive.png" alt="Google Drive" class="mx-auto w-16 h-16">
+          <p class="mt-4 text-lg">Google Drive</p>
+        </div>
+        <div class="hover-scale">
+          <img src="skype.png" alt="Skype" class="mx-auto w-16 h-16">
+          <p class="mt-4 text-lg">Skype</p>
+        </div>
+        <div class="hover-scale">
+          <img src="gmail.png" alt="Gmail" class="mx-auto w-16 h-16">
+          <p class="mt-4 text-lg">Gmail</p>
+        </div>
+        <div class="hover-scale">
+          <img src="trello.png" alt="Trello" class="mx-auto w-16 h-16">
+          <p class="mt-4 text-lg">Trello</p>
+        </div>
+        <div class="hover-scale">
+          <img src="clickup.png" alt="ClickUp" class="mx-auto w-16 h-16">
+          <p class="mt-4 text-lg">ClickUp</p>
+        </div>
+        <div class="hover-scale">
+          <img src="asana.png" alt="Asana" class="mx-auto w-16 h-16">
+          <p class="mt-4 text-lg">Asana</p>
+        </div>
+        <div class="hover-scale">
+          <img src="sf.png" alt="Salesforce" class="mx-auto w-16 h-16">
+          <p class="mt-4 text-lg">Salesforce</p>
+        </div>
+        <div class="hover-scale">
+          <img src="airbnb.png" alt="AirBnb" class="mx-auto w-16 h-16">
+          <p class="mt-4 text-lg">AirBnb</p>
+        </div>
+  </section>
+
+    <!-- Core Competencies Section -->
+    <section id="services offered" class="min-h-[200px] max-w-4xl mx-auto px-8 py-20 bg-[#f9f7f3] rounded-xl shadow-md">
+      <h2 class="text-4xl font-bold mb-12">Services Offered</h2>
+      <div class="flex flex-wrap gap-4">
+        <span class="px-6 py-3 border border-[#f0c2a0] rounded-full text-xl">Customer Support (Voice, Email, Chat)</span>
+        <span class="px-6 py-3 border border-[#f0c2a0] rounded-full text-xl">Hotel Reservation Management</span>
+        <span class="px-6 py-3 border border-[#f0c2a0] rounded-full text-xl">Upselling and Cross-Selling Strategies</span>
+        <span class="px-6 py-3 border border-[#f0c2a0] rounded-full text-xl">Complaint Resolution and Service Recovery</span>
+        <span class="px-6 py-3 border border-[#f0c2a0] rounded-full text-xl">CRM and Data Management</span>
+        <span class="px-6 py-3 border border-[#f0c2a0] rounded-full text-xl">POS Payment Handling</span>
+        <span class="px-6 py-3 border border-[#f0c2a0] rounded-full text-xl">Appointment Setter</span>
+        <span class="px-6 py-3 border border-[#f0c2a0] rounded-full text-xl">Calendar Management</span>
+        <span class="px-6 py-3 border border-[#f0c2a0] rounded-full text-xl">Effective Communication and Customer Interaction</span>
+        <span class="px-6 py-3 border border-[#f0c2a0] rounded-full text-xl">Time Management and Task Prioritization</span>
+      </div>
+    </section>
+
+    <!-- Professional Experience Section -->
+    <section id="experience" class="min-h-[200px] max-w-4xl mx-auto px-8 py-20 bg-[#f9f7f3] rounded-xl shadow-md">
+      <h2 class="text-4xl font-bold mb-12">Professional Experience</h2>
+
+      <!-- Teleperformance -->
+      <div class="flex space-x-6 mb-12">
+        <img src="tele.jfif" alt="Teleperformance Logo" class="w-20 h-20 object-contain rounded">
+        <div>
+          <h3 class="text-2xl font-semibold">Customer Service Representative – Hotel Reservations Account</h3>
+          <p class="text-xl leading-relaxed">Teleperformance | August 2023 – November 2024</p>
+          <ul class="list-disc pl-6 mt-4">
+            <li>Delivered comprehensive support for hotel bookings, payment verifications, and reservation modifications via Hyatt Reserve.</li>
+            <li>Upsold premium room categories and promotions, contributing to increased revenue generation.</li>
+            <li>Achieved high customer satisfaction scores through effective issue resolution and case management using CXOne.</li>
+            <li>Ensured accuracy of reservations and maintained meticulous payment records.</li>
+          </ul>
+        </div>
+      </div>
+
+     <!-- McDonald's -->
+      <div class="flex space-x-6 mb-12">
+        <img src="mcdo.png" alt="McDonald's Logo" class="w-20 h-20 object-contain rounded">
+        <div>
+          <h3 class="text-2xl font-semibold">Service Crew / Team Member</h3>
+          <p class="text-xl leading-relaxed">McDonald's Philippines | February 2020 - March 2023</p>
+          <ul class="list-disc pl-6 mt-4">
+            <li>Provided efficient, friendly service using McDonald’s advanced POS system, handling high transaction volumes daily.</li>
+            <li>Assisted with food preparation, customer service, and order fulfillment, ensuring adherence to operational standards.</li>
+            <li>Collaborated in team efforts to reduce service times and elevate overall customer satisfaction.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="min-h-[200px] max-w-4xl mx-auto px-8 py-20 bg-[#f9f7f3] rounded-xl shadow-md">
+            <h2 class="text-4xl font-bold mb-12">Achievements & Certificates</h2>
+            <ul class="list-disc pl-6 text-xl">
+                <img src="cert.jfif" alt="Customer Service Certificate" class="rounded shadow hover-scale">
+            </ul>
+          </section>
+
+    <!-- Education Section -->
+    <section id="education" class="min-h-[200px] max-w-4xl mx-auto px-8 py-20 bg-[#f9f7f3] rounded-xl shadow-md">
+      <h2 class="text-4xl font-bold mb-12">Education</h2>
+      <div class="flex space-x-6 items-start">
+        <img src="mmsu.png" alt="MMSU Logo" class="w-20 h-20 object-contain rounded">
+        <div>
+          <h3 class="text-2xl font-semibold">Bachelor of Science in Hospitality Management</h3>
+          <p class="text-black-300 text-xl">Mariano Marcos State University | 2015 - 2019</p>
+        </div>
+    </section>
+
+
+<!-- Freelance Section -->
+<section id="freelance" class="min-h-[200px] max-w-4xl mx-auto px-8 py-20 bg-[#f9f7f3] rounded-xl shadow-md">
+  <h2 class="text-4xl font-bold mb-12">Work With Me!</h2>
+
+  <p class="text-xl text-[#5f6368] mb-8">
+    Serious about results? So am I. Whether you need reliable part-time support or a full-time partner who's all-in, I’m here to help you elevate your customer experience and keep your operations running smoothly.
+  </p>
+
+  <h3 class="text-2xl font-semibold mb-4">What I Offer:</h3>
+  <ul class="list-disc pl-8 mb-8 text-lg text-[#5f6368]">
+    <li><strong>Part-Time or Full-Time Support:</strong> Scale your team with a committed, detail-driven professional who treats your goals like their own.</li>
+    <li><strong>Flexible Pricing:</strong> Hourly or custom packages tailored to your needs and budget—because great support should feel effortless, not expensive.</li>
+  </ul>
+
+  <p class="text-xl text-[#5f6368] mb-8">
+    Let’s Talk. I bring energy, focus, and proven customer service experience to every project. If you’re looking for someone who takes initiative, communicates clearly, and gets things done—you just found your next go-to.
+  </p>
+
+  <a href="#contact" class="bg-[#ffe5b4] text-[#5f6368] px-8 py-4 rounded text-xl hover:bg-[#f0c2a0] transition duration-300">Ready to Get Started?</a>
+</section>
+
+
+      <!-- Contact Section -->
+      <section id="contact" class="min-h-[200px] max-w-4xl mx-auto px-8 py-20 bg-[#f9f7f3] rounded-xl shadow-md">
+        <h2 class="text-4xl font-bold mb-12">Contact</h2>
+        <div class="flex items-center space-x-6 mb-6">
+          <img src="gmail.png" alt="Email Icon" class="w-8 h-8">
+          <p class="text-2xl">layaoenjeremycarl@gmail.com</p>
+        </div>
+        <div class="flex items-center space-x-6 mb-6">
+          <img src="phone.png" alt="Phone icon" class="w-8 h-8">
+          <p class="text-2xl">+63 916 468 8144</p>
+        </div>
+        <div class="flex items-center space-x-6 mb-6">
+          <img src="teams.png" alt="Teams icon" class="w-8 h-8">
+          <a href="https://linkedin.com/in/jeremy-layaoen" target="_blank" class="text-indigo-400 hover:underline text-2xl">
+            live:.cid.af39e91bbc572fd9
+        </div>
+        <div class="flex items-center space-x-6">
+          <img src="linkedin.png" alt="LinkedIn Icon" class="w-8 h-8">
+          <a href="https://linkedin.com/in/jeremy-layaoen" target="_blank" class="text-indigo-400 hover:underline text-2xl">
+            linkedin.com/in/jeremy-layaoen
+      </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center p-8 bg-[#ecf0f1] text-sm mt-12">
+    &copy; 2025 Jeremy Carl Layaoen. All rights reserved.
+  </footer>
+
+  <!-- ScrollReveal & Loader Script -->
+  <script>
+    // Scroll reveal
+    ScrollReveal().reveal('section', {
+      duration: 800,
+      distance: '30px',
+      origin: 'bottom',
+      easing: 'ease-in-out',
+      reset: false,
+      interval: 100
+    });
+
+    // Hide loader
+    window.addEventListener('load', () => {
+      const loader = document.getElementById('loading-screen');
+      loader.style.opacity = '0';
+      setTimeout(() => loader.style.display = 'none', 500);
+    });
+
+    // JavaScript to go back to the buttons when Enter is pressed
+    document.addEventListener('keydown', function (event) {
+      if (event.key === "Enter") {
+        document.getElementById('landing').scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  </script>
+
+</body>
+</html>
